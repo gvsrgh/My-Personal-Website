@@ -7,6 +7,66 @@ html {
     text-align: center;
 }
 
+.cplinks ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .cplinks ul {
+        flex-direction: column;
+    }
+}   
+
+.cplinks img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.cplinks li {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profile h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+    background-color: #393E46;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
 a {
     color: #00ADB5;
+}
+
+table, td, th {
+    border: white 1px solid;
+}
+
+td,th {
+    padding: 10px;
+    flex: 1;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #393E46;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
 }
