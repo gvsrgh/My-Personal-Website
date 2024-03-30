@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #000;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+    }
+    .b1 {
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+    }
+    .b2{
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .b3{
+      background-color: #F0F1EC;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .b4{
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    
+    .b5 {
+      background-color: #004592;
+      grid-row: 2;
+      grid-column: 4;
+      border-bottom: 5px  solid #000;
+    }
+
+    .b6 {
+      background-color: #F0F1EC ;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      height: 182px;
+      border-top:5px solid #000;
+    }
+
+    .b7 {
+      background-color: #F0F1EC;
+      grid-row: 4;
+      height: 22px;
+    }
+
+    .b8 {
+      background-color: #F9D01E;
+      grid-row: 4;
+      grid-column: 2;
+      height: 22px;
+    }
+
+    .b9 {
+      background-color: #232629;
+      grid-row: 4;
+      grid-column: 3;
+      height: 22px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+    <div class="b5"></div>
+    <div class="b6"></div>
+    <div class="b7"></div>
+    <div class="b8"></div>
+    <div class="b9"></div>
+  </div>
+</body>
+
+</html>
