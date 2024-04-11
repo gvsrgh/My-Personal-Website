@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <script>
+        function bmiCalculator(weight,height) {
+            return weight / (height * height);
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const button = document.querySelector('button');
+
+            button.addEventListener('click', () => {
+                //written code here
+                var myFriends = prompt("Enter your friends name separated by comma").split(",");
+
+                document.getElementById("pFrnds").innerHTML = "Your friends are: " + myFriends.join(", ");
+                var check = prompt("Enter your friends name to check if he/she is in your friend list");
+                if (myFriends.includes(check)) {
+                    alert("Yes, " + check + " is in your friend list");
+                } else {
+                    alert("No, " + check + " is not in your friend list");
+                }
+                //end of written code
+            });
+        });
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <p>Friends list:</p>
+    <button type="button" class="btn btn-dark">Click me</button>
+    <br>
+    <p>Your friends list:</p>
+    <p id="pFrnds"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
