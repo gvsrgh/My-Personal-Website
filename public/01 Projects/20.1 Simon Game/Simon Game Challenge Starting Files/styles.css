@@ -51,3 +51,13 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.start{
+  background-color: #FEF2BF;
+  color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
