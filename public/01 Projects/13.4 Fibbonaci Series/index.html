@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const button = document.querySelector('button');
+
+            button.addEventListener('click', () => {
+                var n = parseInt(document.getElementById('fibInput').value);
+                var fibNumbers = fibonacciGenerator(n);
+                var fibText = fibNumbers.join(', ');
+                document.getElementById("fibonacciOutput").innerText = fibText;
+            });
+
+            function fibonacciGenerator(n) {
+                var res = [0, 1];
+                if (n === 1) return [0];
+                else if (n === 2) return [0, 1];
+                for (var a = 0, b = 1, c, i = 2; i < n; i++) {
+                    c = a + b;
+                    res.push(c);
+                    a = b;
+                    b = c;
+                }
+                return res;
+            }
+        });
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <p>Enter the number of Fibonacci numbers you want to generate:</p>
+    <input type="number" id="fibInput" placeholder="Enter a number">
+    <button type="button" class="btn btn-dark">Generate Fibonacci</button>
+    <br>
+    <p>Fibonacci Numbers:</p>
+    <p id="fibonacciOutput"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
