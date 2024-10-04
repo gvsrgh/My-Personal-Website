@@ -1,0 +1,7 @@
+.gradient-background {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* dark yellowish gradient */
+}
+
+#features {
+  background-color: #f8f9fa; /* Light background for features section */
+}
