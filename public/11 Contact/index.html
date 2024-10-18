@@ -23,19 +23,25 @@
     <main>
         <div class="contact-form">
             <h1>Contact Me</h1>
-            <form id="contactForm">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="79040754-e356-4fcd-a6a6-8fda02a2d5b8">
+
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
@@ -43,12 +49,12 @@
 
     <footer>
         <p>Created by Govvala Venkata Sai Ram</p>
-        <p>Contact information: saigovvala2346@gmail.com<p>
+        <p>Contact information: saigovvala2346@gmail.com</p>
         <a href="https://www.linkedin.com/in/gvsr/" target="_blank"><img src="https://www.freepnglogos.com/uploads/linkedin-logo-black-png-image-21.png" alt="LinkedIn Logo"/></a>
         <a href="https://www.github.com/gvsrgh" target="_blank"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt="GitHub Logo"/></a>
     </footer>
     
-    <script src="./index.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
