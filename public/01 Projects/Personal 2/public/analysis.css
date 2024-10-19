@@ -1,0 +1,56 @@
+/* General body styles */
+body {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* Dark yellowish gradient */
+  font-family: Arial, sans-serif; /* Base font */
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem; /* Main heading size */
+  color: #FFFFFF; /* White color for better contrast */
+  text-align: center; /* Center text */
+  text-shadow: 
+    3px 3px 0 rgba(139, 117, 0, 0.8), /* Dark yellowish shadow */
+    6px 6px 0 rgba(139, 117, 0, 0.5); /* Deeper shadow for depth */
+}
+
+h2 {
+  font-size: 2rem; /* Subheading size */
+  color: #FFFAFA; /* Snow color for a softer contrast */
+  text-shadow: 
+    2px 2px 0 rgba(139, 117, 0, 0.8), /* Dark yellowish shadow */
+    4px 4px 0 rgba(139, 117, 0, 0.5); /* Deeper shadow for depth */
+}
+
+/* Screenshot container styles */
+.screenshot-container {
+  margin: 20px 0; /* Spacing for each screenshot */
+}
+
+/* Screenshot image styles */
+.screenshot {
+  width: 80%; /* Set image width to 80% of the container */
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Footer styles */
+footer {
+  padding: 20px; /* Footer padding */
+  position: relative; /* Footer positioning */
+  bottom: 0; /* Keep footer at the bottom */
+  width: 100%; /* Full width footer */
+  color: #333; /* Default text color for footer */
+}
+
+/* Footer link styles */
+footer a {
+  color: #FFA500; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
