@@ -1,0 +1,136 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Gradient Background */
+.gradient-background {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* Dark yellowish gradient */
+}
+
+/* Features Section */
+#features {
+  background-color: #f8f9fa; /* Light background for features section */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #FFA500; /* Orange button */
+  border-color: #FFA500; /* Orange button */
+}
+
+.btn-primary:hover {
+  background-color: #FF8C00; /* Darker orange button */
+  border-color: #FF8C00; /* Darker orange button */
+}
+
+/* Update the existing #image-slider styles */
+#image-slider {
+  position: relative;
+  max-width: 600px; /* Adjust based on your design */
+  margin: auto;
+  overflow: hidden;
+  margin-left: 150px; /* Move the entire div to the left by 100px */
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none; /* Hide all images by default */
+  border-radius: 11%;
+}
+
+.slide.active {
+  display: block; /* Show the active image */
+}
+
+
+
+
+/* Detect Section */
+.detect-section {
+  background-color: #e7f3fe;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.detect-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.detect-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Analysis Section */
+.analysis-section {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.analysis-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.analysis-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Settings Section */
+.settings-section {
+  background-color: #d4edda;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.settings-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.settings-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #e7e7e7; /* Light footer background */
+  padding: 20px; /* Footer padding */
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  color: #333; /* Text color for footer */
+}
+
+footer a {
+  color: #FFA500; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Navbar Styles for Sign In and Sign Up Buttons */
+.navbar-buttons {
+  padding-top: 20px; /* Adjust top padding */
+  padding-right: 20px; /* Adjust right padding */
+  margin-right: 10px; /* Adjust right margin for spacing */
+}
+
+.navbar-buttons a {
+  margin-right: 10px; /* Space between Sign In and Sign Up buttons */
+}

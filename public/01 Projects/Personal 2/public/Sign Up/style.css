@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #FFD700, #FFA500); /* Dark yellowish gradient */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Styles */
+  .sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-label {
+    text-align: left;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .input-field {
+    width: 100%; /* Make input fields consistent */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-container .input-field {
+    padding-right: 40px; /* Extra space for the eye icon */
+  }
+  
+  .toggle-password {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .eye-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .sign-in-btn {
+    background-color: #FFD700; /* Dark yellowish color */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #FFA500;
+  }
+  
+  .google-icon {
+    width: 40px;
+    height: auto;
+  }
+  
+  /* Sign Up Text */
+  .sign-up-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .sign-up-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sign-up-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer styles */
+footer {
+  background-color: rgb(231, 231, 231); /* Light footer background */
+  color: rgb(51, 51, 51); /* Dark text color for footer */
+  padding: 10px 20px; /* Padding for better spacing */
+  width: 100%; /* Full width footer */
+  text-align: center; /* Center text in footer */
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Keep footer at the bottom */
+  left: 0; /* Ensure it spans the full width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Footer link styles */
+footer a {
+  color: rgb(255, 165, 0); /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

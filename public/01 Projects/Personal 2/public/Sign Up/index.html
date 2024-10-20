@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAFE - Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateForm(event) {
+      // Prevent form submission initially
+      event.preventDefault();
+
+      // Get the values of email, password, and confirm password fields
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const confirmPassword = document.getElementById('confirm-password').value.trim();
+
+      // Check if all fields have values and if password matches confirm password
+      if (email !== "" && password !== "" && password === confirmPassword) {
+        // Redirect to noindex.html if all fields are filled correctly
+        window.location.href = './../../noindex.html';
+      } else {
+        // Show an alert if fields are empty or passwords do not match
+        alert('Please fill in all fields correctly.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Create Your Account</h1>
+
+    <form class="sign-in-form" onsubmit="validateForm(event)">
+      <label for="email" class="input-label">Email Id</label>
+      <input type="email" id="email" class="input-field" placeholder="Enter your mail id" required>
+
+      <label for="password" class="input-label">Password</label>
+      <div class="password-container">
+        <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+        <button type="button" class="toggle-password">
+          <img src="./images/eye.png" alt="Show/Hide Password" class="eye-icon">
+        </button>
+      </div>
+
+      <label for="confirm-password" class="input-label">Confirm Password</label>
+      <div class="password-container">
+        <input type="password" id="confirm-password" class="input-field" placeholder="Confirm your password" required>
+        <button type="button" class="toggle-password">
+          <img src="./images/eye.png" alt="Show/Hide Password" class="eye-icon">
+        </button>
+      </div>
+
+      <button type="submit" class="btn sign-in-btn">Sign Up</button>
+
+      <div class="google-sign-in">
+        <a href="#" class="google-sign-in">
+          <img src="./images/google.png" alt="Google Sign In" class="google-icon">
+        </a>
+      </div>
+
+      <p class="sign-up-text">Already have an account? <a href="./../Sign in/index.html" class="sign-up-link">Sign In</a></p>
+    </form>
+  </div>
+  <footer class="text-center text-lg-start bg-light text-body-emphasis py-4">
+    <div class="text-center p-3">
+        &copy; 2024 SAFE App. All rights reserved.
+        <a href="./../../../../11 Contact/index.html">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>
