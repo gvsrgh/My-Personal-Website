@@ -239,3 +239,95 @@ a {
     display: none;
   }
 }
+
+.navbar-menu__small-device {
+  display: block;
+  cursor: pointer;
+  position: relative; /* Add this to make the dropdown align with the small device menu */
+}
+
+.navbar-menu__small-device img {
+  width: 30px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px; /* Adjust to appear directly below the icon */
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 150px;
+  z-index: 100; /* Ensure it stays on top */
+}
+
+/* Style for individual dropdown links */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #606060;
+  font-weight: 600;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f9f9f9;
+}
+
+/* Show dropdown when clicked */
+.show-menu {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu__wrapper {
+    display: none;
+  }
+
+  .navbar-menu__small-device {
+    display: block;
+  }
+
+  /* Ensure the navbar maintains its layout */
+  .navbar {
+    justify-content: space-between;
+  }
+
+  /* Position the dropdown absolutely */
+  .navbar-menu__small-device {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 150px;
+    z-index: 100;
+  }
+
+  /* Show menu when toggled */
+  .dropdown-menu.show-menu {
+    display: block;
+  }
+}
+
+/* Hide the small device menu on larger screens */
+@media screen and (min-width: 769px) {
+  .navbar-menu__small-device {
+    display: none;
+  }
+
+  .navbar-menu__wrapper {
+    display: flex;
+  }
+}

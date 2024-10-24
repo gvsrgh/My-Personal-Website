@@ -31,8 +31,13 @@
           </div>
         </div>
         <div class="navbar-menu__small-device">
-          <img src="./assets/bars.png" alt="Bars" />
-        </div>
+          <img src="./assets/bars.png" alt="Bars" id="menu-bars" />
+          <div class="dropdown-menu">
+            <a href="#">Menu</a>
+            <a href="#">Rewards</a>
+            <a href="#">Gift cards</a>
+          </div>
+        </div>        
       </div>
       <div class="hero">
         <div class="hero__content">
@@ -72,5 +77,11 @@
         <img src="./assets/Starbucks Drinks1.jpg" alt="Coffee Background" />
       </div>
     </div>
+    <script>
+      document.querySelector('.navbar-menu__small-device').addEventListener('click', function() {
+        document.querySelector('.dropdown-menu').classList.toggle('show-menu');
+      });
+    </script>
+    
   </body>
 </html>
