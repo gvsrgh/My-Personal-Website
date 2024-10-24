@@ -222,3 +222,20 @@ a {
     width: 20px;
   }
 }
+
+.navbar-menu__small-device {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar-menu__small-device img {
+  width: 30px;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-menu__small-device {
+    display: none;
+  }
+}
