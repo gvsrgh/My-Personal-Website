@@ -1,24 +1,133 @@
+/* General Body Style */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1F1F1F;  /* Dark background */
-    color: #E8E8E8;  /* Light grey text for readability */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F1F1F;
+    color: #E8E8E8;
 }
 
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo h2 {
+    color: #00ADB5;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E8E8E8;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00ADB5;
+}
+
+/* Main Container Styling */
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* To adjust for the navbar height */
+}
+
+.content {
+    color: #E8E8E8;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #E8E8E8;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #00ADB5;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    border: 2px solid #00ADB5;
+    color: #00ADB5;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 66%;
+    width: 34%;
+    height: 100%;
+    background-image: url('assets/My_Image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #393E46;
+    color: #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+/* Additional Elements Styling */
 h1, h2, h3 {
-    color: #E8E8E8;  /* Light grey text */
+    color: #E8E8E8;
     text-align: center;
 }
 
 a {
-    color: #00ADB5;  /* Accent color */
+    color: #00ADB5;
     text-decoration: none;
     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #7AFF66;  /* Brighter color on hover */
+    color: #7AFF66;
     border-bottom: 2px solid #7AFF66;
 }
 
@@ -35,7 +144,7 @@ footer {
 main {
     max-width: 800px;
     margin: 0 auto;
-    background: #2C2C2C;  /* Darker background for main content */
+    background: #2C2C2C;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -43,13 +152,13 @@ main {
 hr {
     margin-bottom: 20px;
     border: none;
-    border-bottom: 2px solid #00ADB5;  /* Accent color */
+    border-bottom: 2px solid #00ADB5;
 }
 
 ol {
     padding-left: 20px;
     line-height: 1.6;
-    color: #E8E8E8;  /* Light grey text */
+    color: #E8E8E8;
 }
 
 h2, h3 {
@@ -58,58 +167,4 @@ h2, h3 {
 
 ol ol {
     padding-left: 30px;
-}
-
-nav {
-    width: 100%;
-    background-color: #2C2C2C;  /* Dark navbar */
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px; /* Adjusted padding for better alignment */
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-sizing: border-box;
-}
-
-.logo h2 {
-    color: #00ADB5;  /* Accent color for logo */
-    font-size: 24px;
-    margin: 0;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-.nav-links li {
-    margin-left: 20px; /* Reduced margin */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #E8E8E8;  /* Light grey text */
-    font-size: 16px; /* Adjusted font size for better fit */
-    transition: color 0.3s ease-in-out;
-}
-
-.nav-links a:hover {
-    color: #00ADB5;  /* Hover color */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #393E46;
-    color: #E8E8E8;
-    border-top: 1px solid #E8E8E8;
-}
-
-footer img {
-    width: 35px;
-    height: 35px;
-    margin: 0 10px;
 }
