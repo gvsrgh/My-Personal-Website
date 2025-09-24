@@ -48,13 +48,49 @@ nav {
     color: #00ADB5;  /* Hover color */
 }
 
+/* Announcement Banner */
+.announcement-banner {
+    width: 100%;
+    background: linear-gradient(135deg, #00ADB5, #00BCD4);
+    padding: 12px 0;
+    position: fixed;
+    top: 60px; /* Adjust based on navbar height */
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.announcement-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.announcement-content p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.announcement-link {
+    color: #fff !important;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.announcement-link:hover {
+    opacity: 0.8;
+}
+
 /* Container Styling */
 .container {
     display: flex;
     align-items: center;
     height: 100vh;
     background-color: #1F1F1F;  /* Dark background */
-    padding-top: 80px; /* To adjust for the navbar height */
+    padding-top: 130px; /* To adjust for the navbar height and announcement banner */
 }
 
 .content {
@@ -112,4 +148,26 @@ footer img {
     width: 35px;
     height: 35px;
     margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .announcement-content p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .container {
+        padding-top: 140px; /* Adjust for mobile navbar and announcement banner */
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-content p {
+        font-size: 13px;
+    }
+    
+    .announcement-banner {
+        padding: 8px 0;
+    }
 }
